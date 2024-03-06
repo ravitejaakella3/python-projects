@@ -54,7 +54,6 @@ class QuizApp:
         self.options_frame = tk.Frame(self.window)
         self.options_frame.grid(column=0,row=4)
         
-        #check user answer and correct answer are matche or not
         self.option_buttons = []
         for i in range(4):
             button = tk.Button(self.options_frame, text="", width=30, command=lambda i=i: self.check_answer(i))
